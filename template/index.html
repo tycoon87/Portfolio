@@ -1,0 +1,44 @@
+<!--
+type html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>index</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='landingPage.css') }}">
+
+</head>
+<body>
+ <h1> Counter </h1>
+ <a href="/projects"> <input type='submit' value='ninja'></a>
+
+</body>
+</html>
+-->
+
+<!--********************************************************-->
+
+<!doctype html>
+<html>
+
+<head>
+    <title>Counter assignment</title>
+</head>
+
+<body>
+    <p>Counter</p>
+    <p>You have visited this page: {session['count']} times</p>
+    <form action="/increment" method="post">
+
+        <button>Add 2</button>
+    </form>
+    <form action="/clear" method="post">
+        <button>Clear counter</button>
+    </form>
+</body>
+
+</html>
